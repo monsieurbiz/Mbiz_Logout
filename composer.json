@@ -1,0 +1,17 @@
+{
+    "name": "mbiz/logout",
+    "type": "magento-module",
+    "license": "BSD-2-Clause",
+    "homepage": "https://github.com/monsieurbiz/Mbiz_Logout",
+    "description": "Magento extension to remove the redirection after logging out of a customer session.",
+    "authors": [
+        {
+            "name": "Léo Peltier",
+            "email": "l.peltier@monsieurbiz.com",
+            "homepage": "http://leo-peltier.fr/"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
