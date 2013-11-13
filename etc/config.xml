@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * This file is part of Mbiz_Logout for Magento.
+ *
+ * @license All rights reserved.
+ * @author Léo Peltier <l.peltier@monsieurbiz.com>
+ * @category Mbiz
+ * @package Mbiz_Logout
+ * @copyright Copyright (c) 2013 Monsieur Biz (http://monsieurbiz.com/)
+ */
+-->
+<config>
+    <modules>
+        <Mbiz_Logout>
+            <version>0.0.1</version>
+        </Mbiz_Logout>
+    </modules>
+    <global>
+        <events>
+            <controller_action_postdispatch_customer_account_logout>
+                <observers>
+                    <mbiz_logout>
+                        <type>singleton</type>
+                        <class>Mbiz_Logout_Model_Observer</class>
+                        <method>removeRedirection</method>
+                    </mbiz_logout>
+                </observers>
+            </controller_action_postdispatch_customer_account_logout>
+        </events>
+    </global>
+</config>
